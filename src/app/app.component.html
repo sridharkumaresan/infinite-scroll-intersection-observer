@@ -1,0 +1,8 @@
+<div class="container">
+  <!-- <infinite-scroll (scrolled)="onScroll()" style="height: 400px; overflow-y: auto"> -->
+  <infinite-scroll (scrolled)="onScroll()">
+    <app-card *ngFor="let d of data">
+      {{d.title}} - {{d.id}}
+    </app-card>
+  </infinite-scroll>
+</div>
